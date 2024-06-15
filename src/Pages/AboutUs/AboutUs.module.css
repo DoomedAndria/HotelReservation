@@ -1,0 +1,46 @@
+.contentCont{
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect{
+    /*padding: 50px;*/
+    margin: 10px 0;
+    width: 80%;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+}
+.child{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.child p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #025179;
+}
+.child h2{
+    margin: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #2d3c5d;
+}
+.child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

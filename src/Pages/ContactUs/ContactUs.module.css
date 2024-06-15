@@ -1,0 +1,40 @@
+.cuCont{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 100px;
+    margin: 60px 200px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 3px 8px;
+    background-color: rgba(231, 246, 253, 0.52);
+    box-sizing: border-box;
+}
+
+.cuCont input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #435888;
+    background-color: rgba(7, 93, 255, 0.09);
+}
+
+
+
+.cuCont p{
+    margin: 15px 0 5px;
+    color: #2d3c5d;
+    font-weight: bolder;
+}
+.cuCont textarea{
+    resize: none;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #2d3c5d;
+    background-color: rgba(7, 93, 255, 0.09);}
+
+

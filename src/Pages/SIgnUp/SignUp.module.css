@@ -1,0 +1,61 @@
+.pg{
+    padding: 100px 0;
+    background: url("/public/Images/walpaper.jpg");
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pg div{
+    margin-top: 20px;
+    padding: 40px 60px;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.pg input{
+    margin: 0 0 20px 0;
+    padding: 5px 10px;
+    width: 200px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.65);
+    border: none;
+    outline: none;
+}
+
+.pg a{
+    position: fixed;
+    left: 20px;
+    top: 120px;
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.pg button{
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    background: transparent;
+    border: white 1px solid;
+    color: white;
+    cursor: pointer;
+    transition: all .35s;
+    border-radius: 5px;
+}
+
+.pg button:hover{
+    background: white;
+    color: #025179;
+}
+
+.pg p{
+    margin: 0 0 2px 0;
+}

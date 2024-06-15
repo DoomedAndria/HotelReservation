@@ -1,0 +1,115 @@
+:root{
+    --rad: 10px
+}
+.stick{
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 60px;
+    z-index: 30;
+}
+.cardCont{
+    position: relative;
+    width: 340px;
+    height: 260px;
+    display: block;
+    border-radius: var(--rad);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.35s;
+}
+
+.cardCont:hover{
+    scale: 105%;
+    box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 8px;
+}
+
+.cardCont:hover .cardIm > div{
+    opacity: 1;
+}
+
+.cardIm{
+    position: relative;
+    width: 100%;
+    height: 65%;
+    border-radius: var(--rad) var(--rad) 0 0;
+}
+
+.cardIm > img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardIm > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.49);
+    border-radius: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.45s;
+}
+
+.cardD{
+    width: 100%;
+    height: 35%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardD  div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardD h2{
+    margin: 0;
+    font-size: 20px;
+    color: #384a72;
+}
+
+.cardD p{
+    margin: 0;
+    font-size: 16px;
+    color: #57647e;
+}
+
+.cardD h3{
+    margin: 0;
+    color: #059212;
+}
+
+.cardD button{
+    border: none;
+    background: #1679AB;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .35s;
+}
+
+.cardD button:hover{
+    background: #025179;
+}
+
+.oldPrice{
+    text-decoration: line-through !important;
+    color: red !important;
+}
+

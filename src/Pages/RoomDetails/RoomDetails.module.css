@@ -1,0 +1,101 @@
+.page{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pics{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.pics img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.mainpic{
+    height: 350px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.thumbs{
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+}
+
+.thumbs div{
+    flex: 1;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.thumbs img{
+    cursor: pointer;
+    transition: all .35s;
+}
+.thumbs img:hover{
+    opacity: 0.8;
+}
+
+.info{
+    padding: 0 50px;
+    color: #025179;
+    box-sizing: border-box;
+}
+
+.info h4{
+    margin: 40px 0 0;
+}
+
+.info h3{
+    color: #059212;
+}
+
+.info h3 span {
+    color: red;
+    text-decoration: line-through;
+}
+
+.book{
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+
+.book button{
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background-color: #1679AB;
+    padding: 2px 10px;
+}
+
+.book h3{
+    color: #025179;
+}
+
+.book h3 span{
+    color: #059212;
+}
+
+.book input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
