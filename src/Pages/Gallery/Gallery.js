@@ -2,6 +2,7 @@ import Cover from "../../Components/Cover/Cover";
 import styles from './Gallery.module.css'
 import {useState} from "react";
 import imgs from './GalleryData'
+import ScrollTop from "../../Components/ScrollTop";
 export default function Gallery(){
 
   const images = imgs
@@ -16,6 +17,7 @@ export default function Gallery(){
 
   return(
     <div>
+      <ScrollTop/>
       <div className={model?`${styles.open} ${styles.model}`:`${styles.model}`}>
         <img className={styles.Icon} src="/Images/close.png" onClick={()=>setModel(false)}/>
         <img className={styles.Img} src={imSrc} />

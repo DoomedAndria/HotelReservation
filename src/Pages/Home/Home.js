@@ -4,12 +4,14 @@ import styles from "./Home.module.css"
 import Cover from "../../Components/Cover/Cover";
 import WeekOfferCarousel from "../../Sections/WeekOfferCarousel";
 import {useNavigate} from "react-router-dom";
+import ScrollTop from "../../Components/ScrollTop";
 
 export default function Home() {
   const {rooms} = useRooms()
   const navigate = useNavigate()
   return (
     <div className={styles.home}>
+      <ScrollTop/>
       <Cover caption="Paradise Starts Here!" img="/Images/cover.jpg"/>
       <div className={styles.Intr}>
         <div>

@@ -2,11 +2,13 @@ import Cover from "../../Components/Cover/Cover";
 import styles from './ContactUs.module.css';
 import stylesHome from '../Home/Home.module.css'
 import {useState} from "react";
+import ScrollTop from "../../Components/ScrollTop";
 
 export default function ContactUs() {
   const [popup,setPopup] = useState(false)
   return (
     <div className={styles.bg} style={{display:"flex", flexDirection: "column", justifyContent:"center",alignItems:"center"}}>
+      <ScrollTop/>
       <Cover img="/Images/contactUs.jpg" caption="Connect with Our Hospitality Team"/>
       <div className={styles.cuCont}>
         <p>First Name</p>

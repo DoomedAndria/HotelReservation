@@ -7,6 +7,7 @@ import rooms from "../../composables/roomData";
 import {useState} from "react";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
+import ScrollTop from "../../Components/ScrollTop";
 
 export default function Rooms() {
   const [roomsR, setRoomsR] = useState(rooms)
@@ -28,7 +29,9 @@ export default function Rooms() {
 
   return (
     <div>
+      <ScrollTop/>
       <Cover caption="Your Sanctuary of Comfort and Elegance" img="/Images/Rooms.jpg"/>
+
       <div className={styles.pageWrapper}>
 
         <div className={styles.filter}>

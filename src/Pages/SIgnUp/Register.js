@@ -1,11 +1,13 @@
 import styles from './SignUp.module.css'
 import {useNavigate} from "react-router-dom";
+import ScrollTop from "../../Components/ScrollTop";
 
 export default function Register(){
 
   const navigate = useNavigate()
   return(
     <div className={styles.pg}>
+      <ScrollTop/>
       <div style={{position:"relative"}}>
         <p>First Name</p>
         <input placeholder="First Name"/>

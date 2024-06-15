@@ -3,6 +3,7 @@ import styles from './RoomDetails.module.css'
 import useRooms from "../../composables/useRooms";
 import {useState} from "react";
 import WeekOfferCarousel from "../../Sections/WeekOfferCarousel";
+import ScrollTop from "../../Components/ScrollTop";
 
 export default function RoomDetails() {
   const {id} = useParams()
@@ -40,6 +41,7 @@ export default function RoomDetails() {
   };
   return (
     <div className={styles.page}>
+      <ScrollTop/>
       <div style={{display: "flex", justifyContent: "space-between", margin: "40px 0"}}>
 
         <div className={styles.pics}>

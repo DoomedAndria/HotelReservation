@@ -1,9 +1,11 @@
 import Cover from "../../Components/Cover/Cover";
 import styles from './AboutUs.module.css'
+import ScrollTop from "../../Components/ScrollTop";
 
 export default function AboutUs(){
   return(
     <div>
+      <ScrollTop/>
       <Cover img="/Images/aboutUs.jpg" caption="Discover the Heart of Heaven Harbor"/>
       <div className={styles.contentCont}>
         <h1 style={{color:"#2d3c5d"}}>Heaven Harbor: Paradise Starts Here</h1>
