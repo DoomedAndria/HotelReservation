@@ -2,6 +2,7 @@ import {useParams} from "react-router-dom";
 import styles from './RoomDetails.module.css'
 import useRooms from "../../composables/useRooms";
 import {useState} from "react";
+import WeekOfferCarousel from "../../Sections/WeekOfferCarousel";
 
 export default function RoomDetails() {
   const {id} = useParams()
@@ -31,7 +32,7 @@ export default function RoomDetails() {
 
       if (timeDifference >= 0) {
         const dayCount = timeDifference / (1000 * 60 * 60 * 24);
-        setFullPrice(dayCount*price);
+        setFullPrice(dayCount*(promotion?new_price:price));
       } else {
         setFullPrice(0);
       }
@@ -88,6 +89,7 @@ export default function RoomDetails() {
           Book Now
         </button>
       </div>
+      <WeekOfferCarousel/>
     </div>
   )
 }

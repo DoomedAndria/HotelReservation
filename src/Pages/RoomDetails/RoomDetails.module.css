@@ -71,6 +71,7 @@
     display: flex;
     align-items: center;
     gap:100px;
+    margin-bottom: 150px;
 }
 
 .book button{
