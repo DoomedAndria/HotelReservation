@@ -8,7 +8,7 @@ export default function RoomDetails() {
   const {id} = useParams()
   const {getRoomById} = useRooms()
 
-  const {images, type, price, promotion, new_price, description, amenities} = getRoomById(id)
+  const {images, type, price, promotion, new_price, description, amenities,long_description} = getRoomById(id)
   const [currentPic, setCurrentPic] = useState(images[0])
   const [fullPrice, setFullPrice] = useState(0)
   const [arrival,setArrival] = useState(null)
@@ -66,11 +66,8 @@ export default function RoomDetails() {
             {amenities.map(e => <li>{e}</li>)}
           </ul>
           <h4>Description:</h4>
-          <p style={{width: "300px"}}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed nunc elementum, tempor felis et,
-            sollicitudin magna. In hendrerit ultrices lacus, non malesuada ante faucibus ac. Nunc quam orci, posuere
-            vitae libero eu, ultrices iaculis eros. Morbi laoreet ex a tellus sodales, porttitor efficitur neque
-            porttitor.
+          <p style={{width: "300px",fontSize:"15px"}}>
+            {long_description}
           </p>
         </div>
       </div>
