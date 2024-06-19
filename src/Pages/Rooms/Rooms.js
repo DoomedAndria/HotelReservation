@@ -4,7 +4,7 @@ import HotelCard from "../../Components/HotelCard/HotelCard";
 import rooms from "../../composables/roomData";
 
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
 import ScrollTop from "../../Components/ScrollTop";
@@ -29,7 +29,6 @@ export default function Rooms() {
 
   return (
     <div>
-      <ScrollTop/>
       <Cover caption="Your Sanctuary of Comfort and Elegance" img="/Images/Rooms.jpg"/>
 
       <div className={styles.pageWrapper}>
