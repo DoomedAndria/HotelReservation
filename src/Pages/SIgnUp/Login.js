@@ -7,7 +7,7 @@ export default function Login(){
   return(
     <div className={styles.pg}>
       <ScrollTop/>
-      <div style={{height:"200px",marginTop:"50px"}}>
+      <div style={{height:"270px",marginTop:"50px"}}>
         <p>E-mail</p>
         <input type="email" placeholder="Email"/>
 
@@ -17,6 +17,9 @@ export default function Login(){
         <button onClick={()=> navigate('/')}>
           Log In
         </button>
+        <p style={{textAlign:'center',marginTop:'20px'}}>or log in with Facebook</p>
+
+        <button className={styles.fb} onClick={()=>window.location.href='https://www.facebook.com/'}>Facebook</button>
       </div>
       <a  href="/register">Don't have an Account?</a>
     </div>

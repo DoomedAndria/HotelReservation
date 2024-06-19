@@ -6,6 +6,7 @@ import {useNavigate} from "react-router-dom";
 export default function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [clickedOnAuth,setClickedOnAuth] = useState(false)
 
   function navigateHome() {
     window.location.href = '/'
@@ -36,8 +37,12 @@ export default function Header() {
       </div>
 
       <div>
-        <button className={styles.signUp} onClick={() => window.location.href = "/login"}>
-          Sign up
+        <button className={styles.auth} onClick={() => setClickedOnAuth(!clickedOnAuth)}>
+          Authenticate
+          <div className={`${isScrolled ? styles.bgBlue : ''} ${clickedOnAuth?'':styles.op}`}>
+            <div onClick={()=>window.location.href='/login'}>Login</div>
+            <div onClick={()=>window.location.href='/register'}>Register</div>
+          </div>
         </button>
       </div>
     </header>

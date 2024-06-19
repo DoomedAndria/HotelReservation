@@ -59,3 +59,13 @@
 .pg p{
     margin: 0 0 2px 0;
 }
+
+.fb{
+    margin-top: 20px;
+    background-color: #4267B2 !important;
+}
+
+.fb:hover{
+    color: white !important;
+    background-color: rgba(66, 103, 178, 0.56) !important;
+}
